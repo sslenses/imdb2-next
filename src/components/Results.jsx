@@ -1,5 +1,4 @@
 import React from 'react'
-import Card from './Card'
 
 export default function Results ({results}) {
   return (
@@ -15,7 +14,9 @@ export default function Results ({results}) {
     '>
         {
             results.map((result) => (
-                <Card key={result.id} result={result} />
+                <div key={result.id}>
+                    <h2>{result.original_title}</h2>
+                </div>
             ))
         }
         
