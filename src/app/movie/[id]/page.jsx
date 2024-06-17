@@ -22,6 +22,7 @@ export default async function MoviePage({ params }) {
           alt={movie.title || movie.name}
           width={500}
           height={300}
+          alt='{movie.title || movie.name}'
           className='rounded-lg'
           style={{ maxWidth: '100%', height: 'auto' }}
         />
